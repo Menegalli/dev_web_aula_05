@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de ToDos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main" class="main">
+        <label for="idTarefa"> ID Tarefa: </label>
+         <input name="idTarefa" type="number" value="0" onchange="displayFilteredTodos(this.value)"/>
+         <label for="idUser"> ID User:  </label>
+         <input name="idUser" type="number" value="0" onchange="displayFilteredUsers(this.value)"/>
+         <div class="btn-group">
+            <button onclick="displayTodos()">Mostrar Todas as Tarefas</button>
+            <button onclick="displayTodosUsers()">Mostrar Todos os Usuários</button>
+         </div>
+        <div id="detalhe">
+            <ul id="detalhes-todo"></ul> 
+            <ul id="detalhes-user"></ul>
+            
+        </div>
+        <label for="descricaoTarefa">A fazer:</label>
+        <input name="descricaoTarefa" id="descricao"/>
+        <div id="cadastrarGroup" class="btn-group">
+            <button onclick="cadastrar()">Incluir</button>
+        </div>
+        
+        
+
+        <script src="classes05.js"></script>
+        <script src="dados05.js"></script>
+        <script src="script05.js"></script>
+    </div>
+    
+</body>
+</html>

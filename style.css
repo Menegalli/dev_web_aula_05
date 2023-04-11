@@ -1,0 +1,149 @@
+body {
+	font-family: Arial, sans-serif;
+	background-color: #262626;
+}
+
+h1 {
+	text-align: center;
+	color: #333;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	padding: 10px;
+	margin-bottom: 5px;
+	background-color: #f2f2f2;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+	border-radius: 5px;
+	color: #333;
+    transition: all 0.4s ease-in;
+}
+
+form {
+	background-color: #f2f2f2;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+	border-radius: 5px;
+	padding: 20px;
+	margin: 0 auto;
+	max-width: 400px;
+}
+
+label {
+	display: block;
+	margin-bottom: 10px;
+	color: #f2f2f2;
+    padding: 10px;
+}
+
+input[type="text"],
+input[type="number"],
+input,
+input[type="date"],
+select {
+	display: block;
+	width: 90%;
+	padding: 10px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	border: none;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+	color: #333;
+}
+
+button {
+	display: block;
+	background-color: #333;
+	color: #f2f2f2;
+	border: none;
+	border-radius: 5px;
+	padding: 10px 20px;
+	cursor: pointer;
+    padding: 10px;
+}
+
+.main {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    padding-bottom: 2.5em;
+    transform: translate(-50%, -50%);
+}
+
+.btn-group {
+    text-align: -webkit-center;
+}
+
+.btn-group button {
+    border: 1px solid #333; /* Green border */
+    color: #f2f2f2; /* White text */
+    padding: 10px 24px; /* Some padding */
+    margin: 5px;
+    cursor: pointer; /* Pointer/hand icon */
+    float: left; /* Float the buttons side by side */
+}
+
+.btn-group button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+  
+
+.success-message {
+    color: green;
+    font-weight: bold;
+}
+
+li:is([completed="true"]) {
+	color: rgb(0, 80, 0);
+    background-color: #c7f5cd;
+}
+div:is([completed="true"]) {
+	color: rgb(0, 80, 0);
+    background-color: #c7f5cd;
+}
+
+li:is([completed="false"]) {
+	color: rgb(129, 0, 0);
+    background-color: #f1b8b8;
+}
+div:is([completed="false"]) {
+	color: rgb(129, 0, 0);
+    background-color: #f1b8b8;
+}
+
+button:hover {
+    background-color: #616161;
+    color: #f2f2f2
+}
+
+.fade-item {
+    transition: 2s all ease-in-out;
+    opacity: 0;
+}
+
+.fadein {
+    animation: fadeIn 0.9s 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
